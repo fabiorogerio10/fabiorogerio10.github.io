@@ -7,14 +7,19 @@
 </head>
 	
 	<body>
-hello 2!
+hello 3!
 <div id="tlb"></div>
   </body>
 </html>
 <script>
     $(document).ready(function () {
-		alert('x!');
+
+		try{
         $("#tlb").toolbarTS({ OnMessage: Show, OnError: Show });
+		}
+		catch(e){
+			alert(e);
+		}
     });
 
     function Show(message){

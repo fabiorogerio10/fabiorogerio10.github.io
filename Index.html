@@ -1,14 +1,28 @@
-<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="sourcecode/Common.js"></script>
-<script src="sourcecode/Toolbar.js"></script>
-<script src="sourcecode/ToolbarTS.js"></script>
-<link href="css/ToolBar.css" rel="stylesheet" />
-
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="https://raw.github.com/fabiorogerio10/Toolbar/master/sourcecode/Common.js"></script>
+	<script src="https://raw.github.com/fabiorogerio10/Toolbar/master/sourcecode/Toolbar.js"></script>	
+	<script src="https://raw.github.com/fabiorogerio10/Toolbar/master/sourcecode/ToolbarTS.js"></script>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://raw.github.com/fabiorogerio10/Toolbar/master/css/ToolBar.css">
+</head>
+	
+	<body>
+hello 5!
 <div id="tlb"></div>
-
+  </body>
+</html>
 <script>
     $(document).ready(function () {
+
+		try{
+		alert(Teste("y"));
         $("#tlb").toolbarTS({ OnMessage: Show, OnError: Show });
+		}
+		catch(e){
+			alert(e);
+		}
     });
 
     function Show(message){

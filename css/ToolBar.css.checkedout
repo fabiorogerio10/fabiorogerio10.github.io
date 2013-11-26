@@ -1,0 +1,174 @@
+﻿/* CSS Document */
+
+
+ul.toolbar
+{
+    position: static;
+    width: 100%;
+    height: 28px;
+    margin: 0px;
+    padding: 0px;
+    background-color: inherit;
+    list-style-type: none;
+      
+}
+
+ul.toolbar li
+{
+    display: inline;
+}
+
+
+ul.toolbar li a
+{
+    outline: none;
+    float: left;
+    cursor: pointer;
+    width: 28px;
+    height: 26px;
+    opacity: 0.65;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=65);
+    -moz-opacity: 0.65;
+    -khtml-opacity: 0.65;
+}
+
+
+ul.toolbar li a.enabled:hover
+{
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100) !important;
+    -moz-opacity: 1.0;
+    -khtml-opacity: 1.0;
+    opacity: 1.0;
+}
+
+.enabled
+{
+}
+
+.disabled
+{
+    opacity: 0.1 !important;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+    filter: gray alpha(opacity=30) url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale") !important;
+    -moz-opacity: 0.1;
+    -khtml-opacity: 0.1;
+    -webkit-filter: grayscale(100%) !important;
+}
+
+a.new
+{
+    background: #fff url(Icons/new.png) no-repeat center center;
+}
+a.edit
+{
+    background: #fff url(Icons/edit.png) no-repeat center center;
+}
+a.save
+{
+    background: #fff url(Icons/save.png) no-repeat center center;
+}
+a.delete
+{
+    background: #fff url(Icons/delete.png) no-repeat center center;
+}
+a.back
+{
+    background: #fff url(Icons/back.png) no-repeat center center;
+}
+a.find
+{
+    background: transparent url(Icons/Find22x22.ico) no-repeat center center;
+    float: right !important;
+}
+a.clearingAttr
+{
+    background: transparent url(Icons/clearingAttr.png) no-repeat center center;
+    float: left !important;
+}
+a.Target
+{
+    background: transparent url(Icons/icon-target.png) no-repeat center center;
+    float: left !important;
+}
+
+li.toolbarRadioButton 
+{
+   float:right; 
+   vertical-align:middle;
+   padding-left:5px;
+   padding-right:5px;
+   margin: 0px;
+   height:inherit;
+
+}
+
+input.toolbarRadioButton
+{
+   border:none;
+   background:none;
+   vertical-align:middle;
+   padding:0px;
+   margin: 0px;
+   height:inherit;
+}
+
+div.searchDiv
+{
+    float:right;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px 20px 20px 20px;
+    border-color: #BEBEBE;
+    background-color: white;
+    width: 200px;
+    height: 22px;
+     margin-right:2px;  
+}
+
+input.inputSearch
+{
+    outline: none;
+    width: 145px;
+    height: 18px;
+    font-size:smaller;
+    float:left;
+    border-style:none;
+    background-color: transparent;
+    margin-left:10px;    
+    margin-top:-3px;   
+}
+
+.findText
+{
+    float: right !important;
+    margin-top: 0px;
+    height: 12px;
+    width: 200px;
+    vertical-align: top;
+    font-size: 12px;
+}
+
+
+
+
+a.tooltip span
+{
+    display: none !important;
+    padding: 2px 3px;
+    margin-top: 35px;
+    margin-left: 3px;
+    width: 50px;
+    max-width: 50px;
+}
+
+a.tooltip:hover span
+{
+    display: inline !important;
+    position: absolute;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    color: #6c6c6c;
+    z-index: 9999;
+}

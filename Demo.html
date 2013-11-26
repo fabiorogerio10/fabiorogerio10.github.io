@@ -1,0 +1,21 @@
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="sourcecode/Common.js"></script>
+<script src="sourcecode/Toolbar.js"></script>
+<script src="sourcecode/ToolbarTS.js"></script>
+<link href="css/ToolBar.css" rel="stylesheet" />
+
+<div id="tlb"></div>
+
+<script>
+    $(document).ready(function () {
+        $("#tlb").toolbarTS({ OnMessage: Show, OnError: Show });
+    });
+
+    function Show(message){
+        alert(message);
+    }
+
+    function GetText(text) {
+        return text;
+    }
+</script>
